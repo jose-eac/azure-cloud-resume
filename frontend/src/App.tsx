@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { Mail, Github, Linkedin, ExternalLink } from "lucide-react";
 import { resumeData } from "./data";
 
-
 interface ExperienceItem {
   company: string;
   period: string;
@@ -90,7 +89,6 @@ export default function Resume() {
       {/* Skills Section */}
       <Section title="Capabilities">
         <div className="flex flex-wrap gap-x-8 gap-y-4">
-          {/* (skill: string) clears the TS7006 error */}
           {resumeData.skills.map((skill: string) => (
             <span
               key={skill}
